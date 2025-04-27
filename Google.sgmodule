@@ -2,8 +2,7 @@
 #!desc=Safari 谷歌搜索重定向（Surge）
 
 [URL Rewrite]
-force-http-engine-hosts = *.google.cn
-http://(www.)?google.cn https://www.google.com 302
+http://*.google.cn https://www.google.com 302
 
 [MITM]
 hostname = %APPEND% www.google.cn, www.g.cn
